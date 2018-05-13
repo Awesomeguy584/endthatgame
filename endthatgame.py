@@ -7,5 +7,3 @@ if os.name == 'nt':
         gamesreader = csv.reader(games)
         for line in gamesreader:
             subprocess.run(['taskkill', '/f', '/im', line])
-
-input()
