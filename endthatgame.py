@@ -1,8 +1,11 @@
 import os
-
-task = input()
+import subprocess
+import csv
 
 if os.name == 'nt':
-    os.system('taskkill /f /im ' + task)
+    with open('games.csv', 'r') as games:
+        gamesreader = csv.reader(games)
+        for line in gamesreader:
+            subprocess.run(['taskkill', '/f', '/im', line])
 
 input()

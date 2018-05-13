@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# games csv file
+games.csv
