@@ -2,7 +2,7 @@ import os
 import subprocess
 import csv
 
-print('EndThatGame V1.0\n')
+print('EndThatGame\n')
 
 if os.name == 'nt':
     with open('games.csv', 'r') as games:
